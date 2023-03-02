@@ -47,7 +47,7 @@ function initialize() {
         language_country = languageToCountryCode[lan_code[0]];
     }
     else {
-        language_country = 'en_us';
+        language_country = 'fil-ph';
     }
     
     url = "Strings/" + language_country + "/translation.json";
