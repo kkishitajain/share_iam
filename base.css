@@ -116,6 +116,13 @@ position: absolute; */
     /* padding: 7px 13px;
     border-radius: 26px; */
   }
+   .disable-scrolling{
+            height: 100%;
+            overflow: hidden;
+        }
+  .scrollable-place {
+              height: 1000px;
+        }
 }
 
 /* iPhone 6/7/8  portrait */
