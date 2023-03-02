@@ -1,0 +1,545 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "adobe-clean";
+  position: fixed;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  height: 100%;
+  background: #1e1e1e;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  border-radius: 5px;
+  /* top:26%; */
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* height: 55%; */
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cross-img {
+  width: 22px;
+  height: 22px;
+  top: 13px;
+  left: 12px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.card-div {
+  flex-grow: 1;
+  /* padding: 10px; */
+  /* width:100%;
+position: absolute; */
+  border-radius: 0px 0px 5px 5px;
+  background-color: #1e1e1e;
+}
+
+.heading-text {
+  color: #efefef;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: left;
+  margin: 23px 24px 12px 24px;
+
+
+}
+
+.desc-text {
+  color: #c8c8c8;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  margin: 12px 24px;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
+
+}
+
+.button-primary {
+  background-color: #2A99D0;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 21px;
+  margin: 24px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 32px;
+}
+
+/* Responsive: */
+/* iPhone 5/Se portrait */
+@media only screen and (device-width:320px) and (device-height:568px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 22px 22px 7px 22px;
+  }
+
+  .desc-text {
+    margin: 7px 22px;
+  }
+
+  .button-primary {
+    margin: 22px;
+    /* padding: 7px 13px;
+    border-radius: 26px; */
+  }
+}
+
+/* iPhone 6/7/8  portrait */
+@media only screen and (device-width:375px) and (device-height:667px) and (orientation:portrait) {
+  .heading-text {
+    margin: 22px 22px 9px 22px;
+  }
+
+  .desc-text {
+    margin: 9px 22px;
+  }
+
+  .button-primary {
+    margin: 22px;
+    /* padding: 7px 13px;
+    border-radius: 26px; */
+  }
+}
+
+/* iPhone 6/7/8 plus portrait */
+@media only screen and (device-width:414px) and (device-height:736px) and (orientation:portrait) {
+  .heading-text {
+    margin: 24px 24px 10px 24px;
+  }
+
+  .desc-text {
+    margin: 10px 24px;
+  }
+
+  .button-primary {
+    margin: 24px;
+    /* padding: 8px 14px;
+    border-radius: 28px; */
+  }
+}
+
+/* iPhone X portrait */
+@media only screen and (device-width:375px) and (device-height:812px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 25px 25px 11px 25px;
+  }
+
+  .desc-text {
+    margin: 12px 25px;
+  }
+
+  .button-primary {
+    margin: 25px;
+    /* padding: 8px 14px;
+    border-radius:28px; */
+  }
+
+}
+
+/* iPhone XS Max/ XR / iPhone 11 portrait */
+@media only screen and (device-width:414px) and (device-height:896px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 25px 25px 12px 25px;
+  }
+
+  .desc-text {
+    margin: 12px 25px;
+  }
+
+  .button-primary {
+    margin: 25px;
+  }
+
+}
+
+
+/* iPhone 12 Mini */
+@media only screen and (device-width:360px) and (device-height:780px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 25px 25px 11px 25px;
+  }
+
+  .desc-text {
+    margin: 11px 25px;
+  }
+
+  .button-primary {
+    margin: 25px;
+    /* padding: 8px 14px;
+    border-radius: 28px; */
+  }
+}
+
+/* iPhone 12/ 12 Pro */
+@media only screen and (device-width:390px) and (device-height:844px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 26px 26px 11px 26px;
+  }
+
+  .desc-text {
+    margin: 11px 26px;
+  }
+
+  .button-primary {
+    margin: 26px;
+    /* padding: 8px 14px;
+    border-radius: 28px; */
+  }
+}
+
+/* iPhone 12 Pro Max*/
+@media only screen and (device-width:428px) and (device-height:926px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 29px 29px 12px 29px;
+  }
+
+  .desc-text {
+    margin: 12px 29px;
+  }
+
+  .button-primary {
+    margin: 29px;
+    /* padding: 10px 16px;
+    border-radius: 32px; */
+  }
+}
+
+
+/* iPad portrait */
+@media only screen and (device-width:768px) and (device-height:1024px) and (orientation:portrait) {
+
+  .heading-text {
+    font: normal normal bold 23px/28px Adobe Clean;
+    margin: 28px 28px 14px 28px;
+  }
+
+  .desc-text {
+    font: normal normal normal 18px/23px Adobe Clean;
+    margin: 14px 28px;
+  }
+
+  .button-primary {
+    font: normal normal normal 20px/24px Adobe Clean;
+    margin: 28px;
+    padding: 11px 20px;
+    border-radius: 40px;
+  }
+
+  .cross-img {
+    width: 25px;
+    height: 25px;
+    top: 14px;
+    left: 14px;
+
+  }
+}
+
+/* iPad landscape */
+/* Not tested */
+@media only screen and (device-width:768px) and (device-height:1024px) and (orientation:landscape) {
+
+  .heading-text {
+    margin: 21px 21px 11px 21px;
+    font: normal normal bold 17px/21px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 13px/17px Adobe Clean;
+    margin: 11px 21px;
+  }
+
+  .button-primary {
+    font: normal normal normal 15px/18px Adobe Clean;
+    margin: 21px;
+    padding: 8px 15px;
+    border-radius: 30px;
+  }
+
+  .cross-img {
+    width: 19px;
+    height: 19px;
+    top: 10px;
+    left: 10px;
+
+  }
+}
+
+/* iPad Pro */
+@media only screen and (device-width:1024px) and (device-height:1366px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 39px 39px 17px 39px;
+    font: normal normal bold 31px/39px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 24px/33px Adobe Clean;
+    margin: 17px 39px;
+  }
+
+  .button-primary {
+    font: normal normal normal 28px/35px Adobe Clean;
+    margin: 39px;
+    padding: 14px 28px;
+    border-radius: 56px;
+  }
+
+  .cross-img {
+    width: 36px;
+    height: 36px;
+    top: 19px;
+    left: 19px;
+
+  }
+}
+
+
+/* iPad Pro Landscape*/
+/* Not tested */
+@media only screen and (device-width:1024px) and (device-height:1366px) and (orientation:landscape) {
+
+  .heading-text {
+    font: normal normal bold 23px/28px Adobe Clean;
+    margin: 28px 28px 14px 28px;
+  }
+
+  .desc-text {
+    font: normal normal normal 19px/23px Adobe Clean;
+    margin: 14px 28px;
+  }
+
+  .button-primary {
+    font: normal normal normal 21px/24px Adobe Clean;
+    margin: 28px;
+    padding: 11px 20px;
+    border-radius: 40px;
+  }
+
+  .cross-img {
+    width: 25px;
+    height: 25px;
+    top: 14px;
+    left: 14px;
+
+  }
+
+}
+
+/*iPad Pro 10.2 inch*/
+@media only screen and (device-width:810px) and (device-height:1080px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 30px 30px 15px 30px;
+    font: normal normal bold 24px/30px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 19px/25px Adobe Clean;
+    margin: 15px 30px;
+  }
+
+  .button-primary {
+    font: normal normal normal 21px/26px Adobe Clean;
+    margin: 30px;
+    padding: 12px 20px;
+    border-radius: 40px;
+  }
+
+  .cross-img {
+    width: 27px;
+    height: 27px;
+    top: 15px;
+    left: 15px;
+  }
+
+}
+
+/*iPad Pro 10.2 inch landscape */
+/* Not tested */
+@media only screen and (device-width: 810px) and (device-height: 1080px) and (orientation:landscape) {
+
+  .heading-text {
+    margin: 22px 22px 11px 22px;
+    font: normal normal bold 18px/22px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 13px/18px Adobe Clean;
+    margin: 12px 23px;
+  }
+
+  .button-primary {
+    font: normal normal normal 15px/19px Adobe Clean;
+    margin: 22px;
+    padding: 7px 13px;
+    border-radius: 26px;
+  }
+
+  .cross-img {
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    left: 11px;
+
+  }
+
+}
+
+
+/*iPad Pro 10.5 inch*/
+@media only screen and (device-width:834px) and (device-height:1112px) and (orientation:portrait) {
+
+  .heading-text {
+    margin: 30px 30px 15px 30px;
+    font: normal normal bold 24px/30px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 20px/25px Adobe Clean;
+    margin: 15px 30px;
+  }
+
+  .button-primary {
+    font: normal normal normal 22px/26px Adobe Clean;
+    margin: 30px;
+    padding: 12px 20px;
+    border-radius: 40px;
+  }
+
+  .cross-img {
+    width: 27px;
+    height: 27px;
+    top: 15px;
+    left: 15px;
+
+  }
+}
+
+/*iPad Pro 10.5 inch landscape tbd*/
+/* not tested */
+@media only screen and (device-width: 834px) and (device-height: 1112px) and (orientation:landscape) {
+
+  .heading-text {
+    margin: 23px 23px 11px 23px;
+    font: normal normal bold 18px/22px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 14px/18px Adobe Clean;
+    margin: 11px 23px;
+  }
+
+  .button-primary {
+    font: normal normal normal 15px/20px Adobe Clean;
+    margin: 23px;
+    padding: 8px 16px;
+    border-radius: 32px;
+  }
+
+  .cross-img {
+    width: 21px;
+    height: 21px;
+    top: 11px;
+    left: 11px;
+
+
+  }
+}
+
+/*iPad Pro 11*/
+@media only screen and (device-width:834px) and (device-height:1194px) and (orientation:portrait) {
+  .heading-text {
+    margin: 32px 32px 16px 32px;
+    font: normal normal bold 26px/32px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 21px/27px Adobe Clean;
+    margin: 15px 30px;
+  }
+
+  .button-primary {
+    font: normal normal normal 23px/28px Adobe Clean;
+    margin: 32px;
+    padding: 14px 28px;
+    border-radius: 56px;
+  }
+
+  .cross-img {
+    width: 30px;
+    height: 30px;
+    top: 16px;
+    left: 16px;
+
+  }
+}
+
+/*iPad Pro 11 landscape */
+/* not tested */
+@media only screen and (device-width: 834px) and (device-height: 1194px) and (orientation:landscape) {
+
+  .heading-text {
+    margin: 23px 23px 11px 23px;
+    font: normal normal bold 18px/22px Adobe Clean;
+  }
+
+  .desc-text {
+    font: normal normal normal 14px/18px Adobe Clean;
+    margin: 11px 23px;
+  }
+
+  .button-primary {
+    font: normal normal normal 15px/20px Adobe Clean;
+    margin: 23px;
+    padding: 8px 16px;
+    border-radius: 32px;
+    ;
+  }
+
+  .cross-img {
+    width: 21px;
+    height: 21px;
+    top: 11px;
+    left: 11px;
+
+  }
+}

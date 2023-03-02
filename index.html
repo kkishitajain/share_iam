@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="lozad.min.js"></script>
+  <script src="base.js"></script>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://use.typekit.net/akb0rdo.css">
+
+</head>
+
+
+<body>
+  <body onLoad="javascript:initialize();">
+  <div class="container">
+
+    <div class="popup" id="popup">
+      <div class="image-div">
+        <a class="overlap-image" onclick="onCancelTap();">
+          <img class="cross-img" src="Resources/cross-icon.png">
+        </a>
+
+        <img class="bg-img" src="Resources/background-image.png" loading="lazy">
+      </div>
+
+      <div class="card-div">
+        <div class="text-div">
+            <h4 id="title" class="heading-text"></h4>
+            <p id="desctext" class="desc-text"></p>
+        </div>
+        <div class="button-container">
+            <a id="getAccessButton" class="button-primary" onclick="onSureTap();"></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
