@@ -109,7 +109,7 @@ function onCancelTap() {
     var message = {
         "action": "cancel"
     }
-    .webkit.messageHandlers.interOp.postMessage(message);
+    window.webkit.messageHandlers.interOp.postMessage(message);
 }
 
 function onSureTap() {
