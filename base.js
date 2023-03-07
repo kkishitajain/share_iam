@@ -72,7 +72,7 @@ function initialize() {
                     "action":"load_translations",
                     "path":url
                 }
-                //window.webkit.messageHandlers.interOp.postMessage(message);
+                window.webkit.messageHandlers.interOp.postMessage(message);
                 
             }
         }
@@ -94,7 +94,7 @@ function processTranslations(_translations) {
         "action":"load_completion"
     }
     
-    //  window.webkit.messageHandlers.interOp.postMessage(message);
+      window.webkit.messageHandlers.interOp.postMessage(message);
 }
 
 
@@ -109,12 +109,12 @@ function onCancelTap() {
     var message = {
         "action": "cancel"
     }
-    //.webkit.messageHandlers.interOp.postMessage(message);
+    .webkit.messageHandlers.interOp.postMessage(message);
 }
 
 function onSureTap() {
     var message = {
         "action": "continue"
     }
-   // window.webkit.messageHandlers.interOp.postMessage(message);
+    window.webkit.messageHandlers.interOp.postMessage(message);
 }
